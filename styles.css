@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#straw-and-bubbles {
+  animation: drink 1s ease-in-out infinite alternate;
+}
+
+#ice-cubes {
+  animation: icecubes 1s ease infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#bottle-top {
+  animation: bottletop 2s ease-in-out infinite alternate;
+}
+
+#egg-dots {
+  animation: egg 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#sausages {
+  animation: sausages 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#egg-yolk {
+  animation: eggyolk 2s ease-in infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes drink {
+  to {
+    transform: rotateX(0deg);
+  }
+
+  from {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes icecubes {
+  to {
+    transform: rotateZ(0deg);
+  }
+
+  from {
+    transform: rotateZ(20deg);
+  }
+}
+
+@keyframes bottletop {
+  to {
+    transform: rotateX(0deg);
+  }
+
+  from {
+    transform: rotateX(50deg);
+  }
+}
+
+@keyframes egg {
+  to {
+    transform: rotateY(0deg);
+  }
+
+  from {
+    transform: rotateY(20deg);
+  }
+}
+
+@keyframes sausages {
+  to {
+    transform: rotateZ(0deg);
+  }
+
+  from {
+    transform: rotateZ(20deg);
+  }
+}
+
+@keyframes eggyolk {
+  to {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(1.3);
+  }
+}
